@@ -1,0 +1,13 @@
+<div class="container">  
+
+  <button class="btn btn-info btn-sm" (click)="toggleParagraph();">Display Details</button>
+  <p *ngIf='paragraphToggle'>Secret Password = tuna</p>
+</div>
+<hr>
+<div class="container">
+    <div *ngFor = 'let event of events; let i = index' [ngStyle]='{backgroundColor: paintRow()}' 
+        [ngClass]="{whiteColor: i > '4', blackColor: i < '4'}">
+        {{event}}
+    </div>
+
+</div>
