@@ -1,0 +1,9 @@
+<div class="panel panel-default">
+  <div class="panel-heading">{{countriesList.countryName}}</div>
+  <div class="panel-body">
+    <p>
+      <strong *ngIf="countriesList.type === 'countries'" style="color: green">{{countriesList.capitalCity}}</strong>
+    </p>
+    <a *ngIf="countriesList.type === 'countries'">{{countriesList.population}}</a>
+  </div>
+</div>
