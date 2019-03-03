@@ -13,7 +13,4 @@ export class CountriesComponent implements OnInit {
   ngOnInit() {
   }
 
-  onAddCountry(){
-    this.countryCreated.emit({countryName: 'Indiya',capitalCity:'Bangkok',population: 123456})
-  }
 }

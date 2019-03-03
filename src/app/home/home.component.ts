@@ -25,6 +25,6 @@ export class HomeComponent implements OnInit {
     this.events.push(datetime);
   }
   paintRow(){
-    return 'blue';
+    return 'yellow';
   }
 }
